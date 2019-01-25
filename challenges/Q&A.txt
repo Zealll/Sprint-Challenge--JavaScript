@@ -1,0 +1,27 @@
+1:  Q:  Describe the biggest difference between .forEach & .map.
+
+    A:  In the use of .forEach, the loop goes through the object and presents it's contens as they are, so there won't be a new array returned.
+        With .map, contents can be affected by us, but without affecting the original object content, so we get a new array returned.
+
+
+2.  Q:  What is the difference between a function and a method?
+
+    A:  a function is a stand-alone, a method is a function that is inside of an Object
+
+
+3.  Q:  What is closure?
+
+    A:  while a regular function only includes regular statments, and performs it's indicated procedure, closure will house a Function inside 
+        of a function. It can hold several functions inside one another, it's not only limited to 1 child, But, only the parent will be able to use it's child's contents. A child won't be able to use it's parent's statements.
+
+
+4.  Q:  Describe the four rules of the 'this' keyword.
+
+    A:  1. Window Binding: when used "this" without encapsulation, it will try to tap into the main/parent window/console itself.
+        2. Implicit Binding: in this case "this" becomes specifically connected to Objects and is constricted by them, so it has no relationship with anything outside the object.
+        3. Explicit Binding: Primarely used inside functions. it can be used in two ways, either by .call or by .apply, but it also has .bind, which is stored for later use. As well it needs a parameter input.    .call deals with the included parameter as a whole, . apply deals with the contents of the parameter individually.
+        4. New Binding: We use it when we create Constructor Functions. "New" connects .this from an object to a constroctor function
+
+5   Q:  Why do we need super() in an extended class?
+
+    A:  When we write several Class functions, we have a base class function and a child. in order for the child to use base function's contents, The super keyword is used so that it can access the contents of the base function.
