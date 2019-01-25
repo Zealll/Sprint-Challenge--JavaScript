@@ -97,14 +97,14 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-// const uni = [];
-// for(i = 0; i < graduates.length; i++ ) {
-//     if (graduates[i].first_name === 'uni') {
-//       uni.push(graduates[i]);
-//     }
-//   }
+const uni = []
+for(i = 0; i < graduates.length; i++ ) {
+    if (graduates[i].university.includes('Uni')) {
+     uni.push(graduates[i].university);
+    }
+  }
 
-// console.log(uni);
+console.log(uni);
 
 
 // ==== ADVANCED Array Methods ====
@@ -129,8 +129,8 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-    zooAnimals.forEach((zooAnimals) => {
-    animalNames.push(`Name: ${zooAnimals.animal_name} Scientific: ${zooAnimals.scientific_name}`)
+    zooAnimals.forEach((animals) => {
+    animalNames.push(`Name: ${animals.animal_name} Scientific: ${animals.scientific_name}`)
 })
 console.log(animalNames);
 
@@ -140,9 +140,8 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = 
-zooAnimals.map((zooAnimals) => {
-    return zooAnimals.animal_name.toLowerCase();
+const lowerCase = zooAnimals.map((lower) => {
+    return lower.animal_name.toLowerCase();
   });
 console.log(lowerCase); 
 
@@ -152,8 +151,8 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const largerPopulation = 
-zooAnimals.filter((currentValue) =>{
-    return currentValue.population < 5;
+zooAnimals.filter((animal) =>{
+    return animal.population < 5;
   });
 console.log(largerPopulation);
 

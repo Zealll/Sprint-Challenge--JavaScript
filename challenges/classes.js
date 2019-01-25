@@ -18,7 +18,7 @@ class CuboidMaker{
         return this.length*this.width*this.height
     }
     surfaceArea() {
-        return 2*(this.length*this.width*this.height)
+        return 2*(this.length * this.width + this.length * this.height + this.width * this.height)
     }
   }
 
@@ -27,7 +27,7 @@ class CuboidMaker{
           super(cubProperties)
       }
       cubeSurfaceArea() {
-        return 6*(this.length*this.width*this.height)
+        return 6*(this.length*this.height)
     }
   }
 
@@ -50,3 +50,7 @@ class CuboidMaker{
   console.log(cuboid.surfaceArea()); // 130
   console.log(cube.volume())
   console.log(cube.cubeSurfaceArea())
+
+
+
+ 

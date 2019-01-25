@@ -24,15 +24,15 @@ numbers(1,2,add)
 */
 
 function consume(num1, num2, cb){
-  cb(num1, num2)
+ return cb(num1, num2)
 }
 
 function sum(a,b) {
-  console.log(a+b)
+ return (a+b)
 }
 
 function multy(a,b){
-  console.log(a*b)
+  return (a*b)
 }
 
 function greeting(first, last) {
@@ -46,7 +46,7 @@ function greeting(first, last) {
 // consume(2,2,add); // 4
 // consume(10,16,multiply); // 160
 // consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
-consume(2,2,sum)
+console.log(consume(2,2,sum))
 consume(10,16,multy)
 consume('Mary','Poppins',greeting)
 
