@@ -6,7 +6,7 @@
 
 2.  Q:  What is the difference between a function and a method?
 
-    A:  a function is a stand-alone, a method is a function that is inside of an Object
+    A:  a function is a stand-alone, a method is a function that is inside of an Object and/or Class
 
 
 3.  Q:  What is closure?

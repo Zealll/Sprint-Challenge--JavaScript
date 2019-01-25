@@ -54,7 +54,7 @@ consume('Mary','Poppins',greeting)
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation:
+// Explanation: Because of the Inheritance. nested functions are able to inherit from the parent. As presented from the below example, the nested function's log has an argument of the parent function.
 
 
 const external = "I'm outside the function";
